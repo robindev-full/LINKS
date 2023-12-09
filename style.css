@@ -19,7 +19,7 @@
     --li-border: rgba(0,0,0,0.5);
     --li-bg-color: rgba(0,0,0,0.05);
     --bg-hover:rgba(255, 255, 255, 01);
-    --social-hover:rgba(255, 255, 255,01);
+    --social-hover:rgba(255, 255, 255,02);
     --switch-bg: url(./assets/sun.svg);
 }
 body {
@@ -66,10 +66,13 @@ body *{
     left:0;
     z-index: 1;
     transform: translateY(-50%);
+    animation: slide-out  0.2s ;
 }
 .light #switch button {
-    right: 0;
-    left: initial;
+   animation: slide-in 0.2s forwards;
+}
+#switch button:hover {
+    outline: 8px solid var(--social-hover);
 }
 #switch span {
     display: block;
@@ -130,4 +133,22 @@ footer {
     padding: 24px;
     text-align: center;
     font-size: 14px;
+}
+/*animation*/
+@keyframes slide-in {
+    from {
+        left: 0;
+    }
+    to {
+        left: 50%;
+    }
+}
+@keyframes slide-out {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 0;
+    }
+    
 }
