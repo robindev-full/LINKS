@@ -1,0 +1,116 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --text-color:white;
+    --bg-color: linear-gradient(to left, #ADFDA2 -22.92%, #11D3F3 122.49%);
+   --li-border:rgba(255, 255, 255, 0.5);
+   --li-bg-color:rgba(255, 255, 255, 0.2);
+   --bg-hover:rgba(0,0,0,0.02);
+   --social-hover:rgba(255, 255, 255, 0.2);
+}
+
+.light {
+    --text-color:black;
+    --bg-color:linear-gradient(to right, #96FBC4 0%, #F9F586 100%);
+    --li-border: rgba(0,0,0,0.5);
+    --li-bg-color: rgba(0,0,0,0.05);
+    --bg-hover:rgba(255, 255, 255, 01);
+    --social-hover:rgba(255, 255, 255,01);
+
+
+}
+
+body {
+    background-image: var(--bg-color) ;
+}
+
+body *{
+  font-family:'Inter', sans-serif;
+  color:var(--text-color);
+  border: 0;
+  border-radius: 50%;
+}
+
+#container {
+  width: 360px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+}
+
+/*profile*/
+#profile {
+    text-align: center;
+    padding: 24px;
+}
+
+#profile img {
+    width: 112px;
+}
+
+#profile p {
+    font-weight: 500;
+    line-height: 24px;
+    margin-top: 8px;
+}
+
+/*links*/
+
+ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    gap:16px ;
+    padding: 24px 0px;
+}
+
+ul li a {
+    display: flex;
+    justify-content: center;
+    padding: 16px 24px;
+    background-color: var(--li-bg-color);
+    border: 1px solid var(--li-border);
+    border-radius: 8px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2;
+}
+
+/*pseudo selector*/
+ul li a:hover{
+    background: var(--bg-hover);
+    border: 1.5px solid var(--text-color);
+}
+
+/*social links*/
+#social-links {
+    display: flex;
+    justify-content: center;
+
+    padding: 16px 24px;
+    font-size: 24px;
+}
+
+#social-links a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+    transition: background 0.2s;
+    border-radius: 50%;
+}
+
+#social-links a:hover {
+    background: var(--social-hover);
+}
+footer {
+    padding: 24px;
+    text-align: center;
+    font-size: 14px;
+}
