@@ -37,7 +37,7 @@ O DevLinks é um agregador de links para usar como cartão de visitas online.
 
 - [Acesse o projeto  de referencia finalizado, online](https://maykbrito.github.io/devlinks )
 
-- [Acesse o meu projeto finalizado , online](https://robindev-full.github.io/LINKS)
+- [Acesse o meu projeto finalizado , online](https://robindev-full.github.io/LINKS/)
 
 ## 🔖 Layout
 
